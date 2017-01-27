@@ -1,0 +1,260 @@
+
+ 
+.clearfix:after {
+    content: "";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height: 0;
+    height:0;
+}
+ 
+.clearfix{
+    display: inline-block;
+}
+
+html[xmlns].clearfix{
+display: block;
+}
+
+*html .clearfix {
+height:1%;
+}
+
+.header {
+    width:100%;
+    background-color:#0C2730;
+    clear: both;
+    height: 70px;
+    margin-left:0px;
+    margin-top:0px;
+}
+ 
+.menu {
+    width:100%;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:"Times New Roman";
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#FFFFFF;
+}
+ 
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:22px;
+}
+ 
+.menu > ul > li > a {
+    padding-right: 20px;
+    padding-left: 20px
+    display:inline-block;
+    text-decoration: none;
+
+}
+ 
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:#72D453;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    text-decoration: none;
+}
+ 
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#349CBF;
+}
+
+.non-ref{
+color:#FFFFFF;
+padding-right:20px;
+}
+
+#phone {
+margin-left:350px;
+margin-right:10px
+}
+
+#slideshow {
+    width: 60%;
+    height: 300px;
+    border: 1px solid green;
+    float: left;
+}
+
+#announcements {
+    width: 39%;
+    height: 300px;
+    border: 1px solid red;
+    float: left;
+}
+
+.blue-banner {
+    width:100%;
+    background-color:#0C2730;
+    clear: both;
+    height: 140px;
+}
+
+
+.stats {
+border-right: thin solid #ffffff;
+height: 140px;
+color:#FFFFFF;
+float:left;
+text-align:center;
+padding-right:30px;
+padding-left: 30px;
+width:21%
+}
+
+.stats_last {
+height: 140px;
+text-align:center;
+color:#FFFFFF;
+float:left;
+padding-left: 30px;
+width:21%
+}
+
+.numb
+{
+ font-size:45px;
+ margin-bottom:0px;
+}
+ 
+.title
+{
+    margin-top:0px;
+    font-size:15px;
+}
+
+h1 {
+text-align:center;
+font-family:"Times New Roman";
+}
+
+.course {
+    width: 27%;
+    height: 375px;
+    border: 1px solid gray;
+    margin-right:20px;
+    margin-bottom:20px;
+    float: left;
+}
+
+#first {
+margin-left: 100px;
+}
+
+#fourth {
+margin-left: 295px;
+}
+
+.circ {
+height:120px;
+width:120px;
+vertical-align:top;
+margin-top:30px;
+margin-left:33%;
+margin-bottom:5px;
+}
+
+.tests
+{
+color:gray;
+font-size:18px;
+text-align:center;
+}
+
+.course a{
+    margin-top: 55px;
+    font-size: 20px;
+    text-decoration:none;
+    color:#ffffff;
+    height:40px;
+    text-align:center;
+    display:block;
+}
+
+#MBA:hover{
+    background-color:#F0E0DA;
+    color:#000000;
+    text-decoration:underline;
+}
+
+#GATE:hover {
+    background-color:#CFB8D6;
+    color:#000000;
+    text-decoration:underline;
+}
+
+#JEE:hover {
+    background-color:#DFF0DA;
+    color:#000000;
+    text-decoration:underline;
+}
+
+li.type1, li.type2 {
+font-family:"Times New Roman";
+font-size:25px;
+margin-bottom:10px
+}
+
+li.type1 {
+color:red;
+}
+
+li.type2 {
+color:blue;
+}
+
+.announce
+{
+list-style-image:url('bullet.png');
+}
+
+.logo
+{
+height:50px;
+width:180px;
+margin-top:0px;
+margin-left:0px;
+}
