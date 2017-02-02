@@ -4,10 +4,11 @@
 <link rel="stylesheet" type="text/css" href="TestFunda.css">
 </head>
 <body>
+
 <div class="header clearfix">
     <nav class="menu">
         <ul class="clearfix">
-            <li><a href="#">
+            <li id="pic"><a href="#">
             <img src="logo-place.png" alt="logo" class="logo">
              </a>
             </li>
@@ -49,18 +50,30 @@
         </ul>
     </nav>
 </div>
-<div id="slideshow">
+
+<div class="slideshow">
+  <img class="mySlides" src="img1.jpeg">
+  <img class="mySlides" src="img2.jpg">
+  <img class="mySlides" src="img3.jpg">
+
+  <a class="arrowleft" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="arrowright" onclick="plusDivs(1)">&#10095;</a>
 </div>
+
+<script src="TestFunda.js"></script>
+
 <div id="announcements">
 <h1>Announcements</h1>
 <ul class=announce>
-<li class="type1">This happened</li>
-<li class="type2">This will happen</li>
-<li class="type2">This will happen</li>
-<li class="type2">This will happen</li>
-<li class="type1">This happened</li>
+<li class="type1"><a href="#">This happened</a></li>
+<li class="type2"><a href="#">This will happen</a></li>
+<li class="type2"><a href="#">This will happen</a></li>
+<li class="type2"><a href="#">This will happen</a></li>
+<li class="type1"><a href="#">This happened</a></li>
 </ul>
 </div>
+
+
 <div class="blue-banner clearfix">
 <div class="stats">
 <p class="numb">6,76,982</p>
@@ -85,6 +98,7 @@
 
 <h1>Courses</h1>
 
+<div class="allcourses"> 
 <div class="course" id="first">
 <img src="circle-logo.png" alt="placeholder" class="circ">
 <h1>MBA</h1>
@@ -118,6 +132,7 @@
 <h1>JEE</h1>
 <p class="tests">CAT | XAT | IIFT | NMAT | SNAP | CMAT | MH-CET | MAT</p>
 <a href="#" id="JEE">VIEW MORE</a>
+</div>
 </div>
 
 </body>
