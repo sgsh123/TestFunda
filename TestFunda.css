@@ -212,11 +212,11 @@ font-family:"Times New Roman";
 
 .course {
     width: 27%;
-    height: 375px;
+    height: 325px;
     border: 1px solid gray;
     margin-right:20px;
     margin-bottom:20px;
-    float: left;
+    display:inline-block;
 }
 
 .allcourses {
@@ -229,9 +229,7 @@ font-family:"Times New Roman";
 height:120px;
 width:120px;
 vertical-align:top;
-margin-top:30px;
-margin-left:33%;
-margin-bottom:5px;
+margin-bottom:20px;
 }
 
 .tests
@@ -241,13 +239,13 @@ font-size:18px;
 text-align:center;
 }
 
-.course a{
-    margin-top: 55px;
+.course a{ 
+    margin-top: 23px;   
     font-size: 20px;
     text-decoration:none;
     color:#ffffff;
     height:40px;
-    text-align:center;
+    vertical-align: bottom;
     display:block;
 }
 
