@@ -1,6 +1,7 @@
 var clock1, clock2;
 var seconds1 = 300;
 var seconds2 = 300;
+var start1 = false, start2 = false;
 
 function setTimer(o_seconds,id) {
     if(o_seconds < 0)
@@ -32,12 +33,20 @@ function setTimer(o_seconds,id) {
 function startTimer(id)
 {
   if(id.localeCompare("Timer1"))
-  {
-    clock1 = setInterval(function() {seconds1 = seconds1-1; setTimer(seconds1,id);}, 1000);
+  { 
+    if(!start1)
+    {
+        clock1 = setInterval(function() {seconds1 = seconds1-1; setTimer(seconds1,id);}, 1000);
+        start1 = true;
+    }
   }
   if(id.localeCompare("Timer2"))
   {
-    clock2 = setInterval(function() {seconds2 = seconds2-1; setTimer(seconds2,id);}, 1000);
+    if(!start2)
+    {
+        clock2 = setInterval(function() {seconds2 = seconds2-1; setTimer(seconds2,id);}, 1000);
+        start2 = true;
+    }
   }
 }
 
@@ -46,10 +55,12 @@ function stopTimer(id)
   if(id.localeCompare("Timer1"))
   {
     clearInterval(clock1);
+    start1 = false;
   }
   if(id.localeCompare("Timer2"))
   {
     clearInterval(clock2);
+    start2 = false;
   }
 
 } 
