@@ -1,7 +1,26 @@
+$(document).ready(function(){
 var clock1, clock2;
 var seconds1 = 300;
 var seconds2 = 300;
 var start1 = false, start2 = false;
+
+$(".stop").on("click", function()
+{
+  var id = $("button").closest("p").prop("id");
+  stopTimer(id);
+}
+
+$(".start").on("click", function()
+{
+  var id = $("button").closest("p").prop("id");
+  startTimer(id);
+}
+
+$(".reset").on("click", function()
+{
+  var id = $("button").closest("p").prop("id");
+  resetTimer(id);
+}
 
 function setTimer(o_seconds,id) {
     if(o_seconds < 0)
@@ -65,10 +84,13 @@ function stopTimer(id)
 
 } 
 
-function ReSetTimer(id)
+function resetTimer(id)
 {
     stopTimer(id);
     setTimer(300,id);
     seconds1 = 300;
     seconds2 = 300; 
 }
+
+});
+
