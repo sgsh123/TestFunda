@@ -65,10 +65,32 @@ function stopTimer(id)
 
 } 
 
-function ReSetTimer(id)
+function resetTimer(id)
 {
     stopTimer(id);
     setTimer(300,id);
     seconds1 = 300;
     seconds2 = 300; 
 }
+
+$(document).ready(function() {
+
+$(".stop").on("click", function()
+{
+  var id = $(this).closest("span").find("p").prop("id");
+  stopTimer(id);
+});
+
+$(".start").on("click", function()
+{
+  var id = $(this).closest("span").find("p").prop("id");
+  
+  startTimer(id);
+});
+
+$(".reset").on("click", function()
+{
+  var id = $(this).closest("span").find("p").prop("id");
+  resetTimer(id);
+});
+});
